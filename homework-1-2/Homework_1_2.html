@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson_Forms</title>
+</head>
+<body>
+	<div style="margin: 0 10%">
+		<h1>
+			Урок "Формы": теги и их атрибуты.
+		</h1>
+
+		<h2>
+			Расскажите немного о себе...
+		</h2>
+
+		<p>
+			Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные.
+		</p>
+
+
+<!-- Первый блок формы -->
+
+
+		<form>
+			<fieldset>
+				<legend><h3>Коротко о себе</h3></legend>
+
+			<p>
+				<label>Имя:
+				<input type="text" name="first_name">
+				</label>
+			</p>
+			<p>
+				<label>Фамилия:
+				<input type="text" name="last_name">
+				</label>
+			</p>
+
+			<p>
+				<label>Пол:</label>
+				<label>
+					<input type="radio" name="title_1">
+					мужской
+				</label>
+
+				<label>
+					<input type="radio" name="title_1">
+					женский
+				</label>
+			</p>
+			<p>
+				<label>
+					Возраст:
+					<input type="text" size="3"maxlength="3">
+					лет
+				</label>
+			</p>
+			</fieldset>
+		</form>
+
+		
+<!-- Второй блок формы -->
+
+
+		<form>
+			<fieldset>
+				<legend><h3>Подробнее о себе</h3></legend>
+			<p>
+				<label>
+					<input type="radio" name="title_2">молодой человек
+				</label>
+			<br>
+				<label>
+					<input type="radio" name="title_2">девушка
+				</label>
+			<br>
+				<label>
+					<input type="text"> Дата рождения
+				</label>
+			<br>
+				<label>
+					<input type="text"> Семейное положение
+				</label>
+			<br>
+				<label>
+					<input type="text"> Социальный статус
+				</label> 
+			<br>
+				<label>
+					<input type="text"> Место жительства
+				</label>
+				
+			</p>	
+			<p>
+				<b>Что вы обычно делаете на выходных:</b>
+			</p>
+			<p>
+				<label>
+					<input type="checkbox">Сплю
+				</label>
+			<br>
+				<label>
+					<input type="checkbox"> Гуляю с друзьями
+				</label>
+			<br>
+				<label>
+					<input type="checkbox"> Хожу на рыбалку
+				</label>
+			<br>
+				<label>
+					<input type="checkbox"> Играю в игры
+				</label>
+			</p>
+			<p>
+				<b>Рассказать о формах в книге, посвященной HTML:</b>
+			</p>
+			<p>
+				<select name="about_form">
+					<option>Site frequency:</option>
+					<option>Big bubble</option>
+					<option>Discovery</option>
+					<option>Crocodile</option>
+				</select>
+			</p>
+			<p>
+				<b>Сколько книг вы прочитали за свою жизнь:</b>
+			</p>
+			<p>
+				<label>
+				<input type="radio" name="title_2"> 0-10
+				</label><br>
+				<label>
+					<input type="radio" name="title_2"> 11-20
+				</label><br>
+				<label>
+				<input type="radio" name="title_2"> 21-50
+				</label><br>
+				<label>
+					<input type="radio" name="title_2"> 50+
+				</label>
+			</p>
+			<p>
+				 <b>Ваши коментарии:</b><br>
+				<textarea name="" cols="60" rows="10"></textarea>
+				
+			</p>
+			<p>
+				<select name="position" size="3">
+					<option>первая позиция</option>
+					<option>Вторая позиция</option>
+					<option>Третья позиция</option>
+				</select>
+			</p>
+			</fieldset>
+		</form>
+
+
+<!-- Третий блок формы -->
+
+
+
+		<form action="">
+			<fieldset>
+				<legend><h3>И в заключении</h3></legend>
+				<p>
+					<input type="text" placeholder="Это поле было введено до вас" size="40">
+				</p>
+				<p>
+					<b>Email:</b><br>
+					<input type="email" size="40">
+				</p>
+				<p>
+					<b>Хотите подписаться на самую модную рассылку спама?</b>
+				<br>
+				 	<i>Выберите категории</i>
+				 </p>
+				 <p>
+				 	<label>
+					<input type="checkbox"> Оборудование
+					</label>
+				<br>
+					<label>
+					<input type="checkbox"> Как приготовить обеды
+					</label>
+				<br>
+					<label>
+					<input type="checkbox"> Заработай миллион за два дня
+					</label>
+				 </p>
+				 <p>
+				 	<b>На сколько сложная задача:</b>
+				 </p>
+				 <p>
+					<label>
+					<input type="radio" name="title_3" checked> Совсем нет
+					</label>
+				<br>
+					<label>
+					<input type="radio" name="title_3"> Так себе
+					</label>
+				<br>
+					<label>
+					<input type="radio" name="title_3"> Еле справились
+					</label>
+				</p>
+				
+			</fieldset>
+		</form>
+
+<!-- Кнопка отправки формы -->
+
+			<form action="">
+			<p>
+				<input type="submit">
+			</p>
+		</form>
+	</div>
+</body>
+</html>
