@@ -22,10 +22,12 @@
 <!-- Первый блок формы -->
 
 
-	<form action="">
+	<form action="#" name="profile">
 		<fieldset>
-			<legend><h3>Коротко о себе</h3></legend>
-			
+			<legend>
+				<b>Коротко о себе</b>
+			</legend>
+
 			<p>
 				<label>Имя:
 					<input type="text" name="first_name">
@@ -39,63 +41,63 @@
 			</p>
 			
 			<p>
-				<label>Пол:</label>
+				Пол:
 				<label>
-					<input type="radio" name="title_1"> мужской
+					<input type="radio" name="gender" value="male"> мужской
 				</label>
 				
 				<label>
-					<input type="radio" name="title_1"> женский
+					<input type="radio" name="gender" value="female"> женский
 				</label>
 			</p>
 			
 			<p>
 				<label>
 					Возраст:
-					<input type="number" size="3" min="1" max="100">
+					<input type="number" min="1" max="100">
 					лет
 				</label>
 			</p>
 		</fieldset>
-	</form>
 
 		
 <!-- Второй блок формы -->
 
 
-	<form action="">
 		<fieldset>
-			<legend><h3>Подробнее о себе</h3></legend>
+			<legend>
+					<b>Подробнее о себе</b>
+			</legend>
 
 			<p>
 				<label>
-					<input type="radio" name="title_2">молодой человек
+					<input type="radio" name="title_2" value="men">молодой человек
 				</label>
 			</p>
 			<p>	
 				<label>
-					<input type="radio" name="title_2">девушка
+					<input type="radio" name="title_2" value="women">девушка
 				</label>
 			</p>
 
 			<p>
 				<label>
-					<input type="text"> Дата рождения
+					<input type="text" name="bith_date"> Дата рождения
 				</label>
 			</p>
 			<p>
 				<label>
-					<input type="text"> Семейное положение
+					<input type="text" name="family_status"> Семейное положение
 				</label>
 			</p>
 			<p>
 				<label>
-					<input type="text"> Социальный статус
+					<input type="text" name="social_status"> Социальный статус
 				</label> 
 			</p>
 			<p>
 				<label>
-					<input type="text"> Место жительства
+					<input type="text" name="location"> Место жительства
 				</label>	
 			</p>
 
@@ -178,26 +180,26 @@
 				</select>
 			</p>
 		</fieldset>
-	</form>
 
 
 <!-- Третий блок формы -->
 
 
 
-	<form action="">
 		<fieldset>
-			<legend><h3>И в заключении</h3></legend>
+			<legend>
+					<b>И в заключении</b>
+			</legend>
 
 			<p>
-				<input type="text" placeholder="Это поле было введено до вас" size="40">
+				<input type="text" placeholder="Это поле было введено до вас" size="40"  readonly>
 			</p>
 
 			<p>
 				<label for="mail"><b>Email:</b></label>
 			</p>
 			<p>
-				<input id="mail" type="email" size="40">
+				<input id="mail" type="email" size="40" autocomplete="on">
 			</p>
 
 			<p>
@@ -245,13 +247,11 @@
 			</p>
 				
 		</fieldset>
-	</form>
 
 <!-- Кнопка отправки формы -->
 
-	<form action="">
 		<p>
-			<input type="submit">
+			<input type="submit" value="Отправить">
 		</p>
 	</form>
 </body>
